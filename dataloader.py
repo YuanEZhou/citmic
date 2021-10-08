@@ -205,6 +205,12 @@ class DataLoader(data.Dataset):
 
                 seq_zh = self.h5_label_file['labels_zh'][ixl: ixl + seq_per_img, :self.seq_length]
                 seq_reverse_zh = self.h5_label_file['labels_reverse_zh'][ixl: ixl + seq_per_img, :self.seq_length]
+
+                # data augmentation. 
+                tmp_idx = np.arange(seq_per_img)
+                random.shuffle(tmp_idx)
+                seq_zh = seq_zh[tmp_idx]
+                seq_reverse_zh = seq_reverse_zh[tmp_idx]
             
 
         if self.opt.mode == 'pair':
