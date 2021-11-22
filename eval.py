@@ -21,11 +21,11 @@ import torch
 # Input arguments and options
 parser = argparse.ArgumentParser()
 # Input paths
-parser.add_argument('--model', type=str, default='save/nsc-cit-pair-decoder-1/model-best.pth',
+parser.add_argument('--model', type=str, default='save/nsc-cit-en-decoder-1/model-best.pth',
                 help='path to model to evaluate')
 parser.add_argument('--cnn_model', type=str,  default='resnet101',
                 help='resnet101, resnet152')
-parser.add_argument('--infos_path', type=str, default='save/nsc-cit-pair-decoder-1/infos_nsc-cit-pair-decoder-1-best.pkl',
+parser.add_argument('--infos_path', type=str, default='save/nsc-cit-en-decoder-1/infos_nsc-cit-en-decoder-1-best.pkl',
                 help='path to infos to evaluate')
 # Basic options
 parser.add_argument('--batch_size', type=int, default=0,
@@ -83,7 +83,7 @@ parser.add_argument('--split', type=str, default='val',
 parser.add_argument('--coco_json', type=str, default='', 
                 help='if nonempty then use this file in DataLoaderRaw (see docs there). Used only in MSCOCO test evaluation, where we have a specific json file of only test set images.')
 # misc
-parser.add_argument('--id', type=str, default='nsc-cit-zh-decoder-1-b3', 
+parser.add_argument('--id', type=str, default='nsc-cit-en-decoder-1-b3', 
                 help='an id identifying this run/job. used only if language_eval = 1 for appending to intermediate files')
 parser.add_argument('--verbose_beam', type=int, default=1, 
                 help='if we need to print out all beam search beams.')
