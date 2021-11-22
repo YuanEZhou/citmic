@@ -4,6 +4,4 @@ data
 save
 vis
 eval_results
-cider
-coco-caption
 .ipynb_checkpoints
