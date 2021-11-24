@@ -1,4 +1,4 @@
-# Compact Bidirectional Transformer for Image Captioning
+# An Empirical Study of Compact Transformer for Multilingual Image Captioning
 
 ## Requirements
 - Python 3.8
