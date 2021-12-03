@@ -12,6 +12,7 @@
 2. Download the preprocessd dataset from this [link](https://entuedu-my.sharepoint.com/:u:/g/personal/n1806230d_e_ntu_edu_sg/ESLvnVV8BRhLnd1u3P4V6fYBoAJrZNenGGbIKOHrQq-4Pw?e=YPg2vY) and extract it to data/.
 3. Please download the converted [VinVL](https://github.com/pzzhang/VinVL/blob/main/DOWNLOAD.md#pre-exacted-image-features) feature from this [link](https://entuedu-my.sharepoint.com/:u:/g/personal/n1806230d_e_ntu_edu_sg/ETEt4voFu-hAkxxwbwgZEz0BrGiDizFmqMTf3wGdWlv0bQ?e=FcqLhg) and place them under data/mscoco_VinVL/. 
 4. Download part checkpoints from [link1](https://entuedu-my.sharepoint.com/:u:/g/personal/n1806230d_e_ntu_edu_sg/EY8ELL7X-jFEvwIStb1vxlsBLVWrSksLrzJMUh_z9j2fQA?e=roBZt8) and [link2](https://entuedu-my.sharepoint.com/:u:/g/personal/n1806230d_e_ntu_edu_sg/EXpGoA05j3tNo0tFcdeAhv8BNxyJM2XJUeNZDT2d5Z-ncg?e=nWNp2W) and extract them to save/.
+5. Please run   ```python  scripts/prepro_reference_json.py``` to prepare 'captions_val2014_zh.json' for chinese caption evaluation.
 
 ## Offline Evaluation
 To reproduce the results of a model, such as 'cit-pair-decoder-1-data-aug', just run
